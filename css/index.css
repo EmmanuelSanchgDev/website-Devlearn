@@ -1,0 +1,151 @@
+:root {
+    --hover: rgb(193, 193, 193);
+    --size-header: 5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: var(--size-header);
+    width: 100%;
+    padding: 0 1.5rem;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.header__conteiner-logo {
+    width: clamp(15rem,20%,25rem);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.header__conteiner-menu {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.menu-icon {
+    font-size: 3.5rem;
+}
+
+.header__conteiner-menu:active {
+    transition: 0.2s;
+    background-color: var(--hover);
+}
+
+.header__checkbox {
+    display: none;
+}
+
+.header__menu {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 1rem 0;
+
+
+    display: none;
+}
+
+.menu__items {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+
+.menu__items:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.header__checkbox:checked + .header__menu {
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.main__primary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary__conteiner-image {
+    width: 95%;
+}
+
+.primary__image {
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.primary__conteiner-text {
+    width: 95%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.primary__text {
+    font-size: 4rem;
+}
+
+.main__conteiner-links {
+    width: 95%;
+    height: var(--size-header);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main__links {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    display: inline-block;
+    border: 0.1rem solid #000;
+    padding: 2rem;
+    border-radius: 0.6rem;
+}
+
+.main__links:hover {
+    color: #fff;
+    background-color: #000;
+}

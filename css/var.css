@@ -2,6 +2,7 @@
     --hover: rgb(193, 193, 193);
     --size-header: 5rem;
     --radius: 0.8rem;
+    --transition: 0.4s;
 }
 * {
     box-sizing: border-box;

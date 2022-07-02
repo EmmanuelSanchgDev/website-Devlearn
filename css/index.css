@@ -135,7 +135,7 @@ body {
 
 .main__links {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +145,7 @@ body {
     border-radius: 0.6rem;
     text-decoration: none;
     font-size: 2.2rem;
+    text-transform: capitalize;
 }
 
 .main__links:active {

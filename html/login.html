@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +28,30 @@
             </nav>
         </label>
     </header>
-
+    <main class="main">
+        <form action="" class="form-container">
+            <h1 class="form__title">Ingresar</h1>
+            <div class="form__container">
+                <label for="correo" class="form__container-input">
+                    <input type="text" name="nombre" id="correo" required placeholder="n" class="form__input">
+                    <span class="form__placeholder">correo</span>
+                </label>
+                <label for="contraseña" class="form__container-input">
+                    <input type="text" name="contraseña" id="contraseña" required placeholder="n" class="form__input">
+                    <span class="form__placeholder">contraseña</span>
+                </label>
+            </div>
+            <article class="form__conteiner-terminos">
+                <label for="terminos">
+                    <input type="checkbox" name="terminos" id="terminos" class="form__input-terminos">
+                    <a href="#none" class="form__terminos">terminos y condiciones</a>
+                </label>
+            </article>
+            <input type="submit" class="form__submit">
+        </form>
+        <figure class="image-container">
+            <img src="/sources/illustrationLogin.png" alt="illustracion para login" class="image">
+        </figure>
+    </main>
 </body>
 </html>

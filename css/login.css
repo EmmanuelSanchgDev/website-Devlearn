@@ -1,5 +1,81 @@
 
 /* estilos movile */
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-container {
+    width: 80%;
+    height: 25rem;
+    border: 0.1rem solid #000;
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form__title {
+    text-align: center;
+}
+
+.form__container-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form__placeholder {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    margin-top: -10.5px;
+    transition: var(--transition);
+}
+
+.form__input {
+    height: 3rem;
+    padding-left: 1rem;
+    outline: none;
+}
+.form__input::placeholder {
+    opacity: 0;
+}
+
+.form__input:focus + .form__placeholder {
+    transform: translate(-0.5rem, -2.5rem);
+}
+
+.form__input:not(:placeholder-shown) + .form__placeholder {
+    transform: translate(-0.5rem, -2.5rem);
+}
+
+.form__submit {
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+/*  */
+.image-container {
+    width: 95%;
+}
+
+.image {
+    max-width: 100%;
+    object-fit: cover;
+}
 
 
 

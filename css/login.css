@@ -13,7 +13,7 @@
     min-width: 32rem;
     width: 50%;
     max-width: 40rem;
-    height: 30rem;
+    min-height: 30rem;
     border: 0.1rem solid #000;
     border-radius: var(--radius);
     padding: 1rem;
@@ -33,13 +33,14 @@
 .form__title {
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 1rem;
 }
 
 .form__container-input {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 2ch;
+    margin-bottom: 2rem;
 }
 
 .form__placeholder {
@@ -101,6 +102,8 @@
 .image-container {
     width: 95%;
     max-width: 50rem;
+    display: flex;
+    justify-content: center;
 }
 
 .image {

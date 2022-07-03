@@ -1,5 +1,6 @@
 /*componenete menu ↓*/
 .header {
+    width: 10%;
     height: 5rem;
     padding: 0 1rem;
     display: flex;

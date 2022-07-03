@@ -22,3 +22,6 @@ body {
     min-height: 100vh;
     min-width: 32rem;
 }
+.main {
+    flex-grow: 1;
+}

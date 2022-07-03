@@ -82,7 +82,6 @@
     }
     .header__checkbox:checked ~ .header__menu {
         width: 100%;
-        padding: 1rem 1rem;
     }
     /*componenete menu →*/    
 }

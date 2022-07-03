@@ -82,6 +82,7 @@
 
 .form__label-checkbox {
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 .form__submit {
@@ -93,10 +94,26 @@
     color: #fff;
     text-transform: capitalize;
     transition: var(--transition);
+    margin: 1rem 0;
 }
 .form__submit:active {
     background-color: #fff;
     color: #000;
+}
+.form__submit:hover {
+    box-shadow: 0 0 0.2rem black;
+}
+
+.form__link-pages {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: inherit;
+    margin: 0 2rem;
+    display: inline-block;
+    width: min-content;
+}
+.form__link-pages:hover {
+    text-decoration: underline;
 }
 
 .image-container {

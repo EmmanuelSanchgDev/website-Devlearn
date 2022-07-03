@@ -9,12 +9,11 @@
     justify-content: space-evenly;
 }
 
-.form-container {
-    width: clamp(32rem, 80%, 40rem);
-    height: clamp(30rem, 50%,45rem);
+.form {
+    min-width: 32rem;
+    width: 50%;
+    max-width: 40rem;
     height: 30rem;
-    min-height: 30rem;
-    max-height: 45rem;
     border: 0.1rem solid #000;
     border-radius: var(--radius);
     padding: 1rem;
@@ -23,11 +22,11 @@
     justify-content: space-evenly;
 }
 
-.form__container {
-    height: 40%;
+.form__container-labels {
+    height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 1rem;
 }
 
@@ -39,6 +38,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 2ch;
 }
 
 .form__placeholder {
@@ -68,11 +68,11 @@
     transform: translate(-0.5rem, -3rem);
 }
 
-.form__container-remember {
+.form__container-checkbox{
     padding-left: 1rem;
 }
 
-.form__remember {
+.form__label-checkbox {
     text-decoration: none;
 }
 

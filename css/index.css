@@ -41,6 +41,7 @@
     padding: 2rem;
     font-size: clamp(3.4rem,7vw,5rem);
     min-width: 35rem;
+    font-weight: normal;
 }
 
 .main__conteiner-links {

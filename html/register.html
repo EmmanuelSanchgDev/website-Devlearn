@@ -15,7 +15,9 @@
 <body>
     <header class="header">
         <figure class="header__conteiner-logo">
-            <img src="https://i.ibb.co/DYzZzj8/logo.png" alt="logo de la pagina" class="header__logo">
+            <a href="/index.html">
+                <img src="https://i.ibb.co/DYzZzj8/logo.png" alt="logo de la pagina" class="header__logo">
+            </a>
         </figure>
         <label for="menu" class="header__conteiner-menu">
             <input type="checkbox" id="menu" class="header__checkbox">
@@ -49,11 +51,11 @@
             </div>
             <article class="form__container-checkbox">
                 <label for="remember">
-                    <input type="checkbox" name="terminos" id="remember" class="form__input-checkbox">
+                    <input type="checkbox" name="terminos" id="remember" required class="form__input-checkbox">
                     <a href="#none" class="form__label-checkbox">terminos y condiciones</a>
                 </label>
             </article>
-            <input type="button" class="form__submit" value="registrar">
+            <input type="submit" class="form__submit" value="registrar">
             <a href="/html/login.html" class="form__link-pages">ingresar</a>
         </form>
         <figure class="image-container">

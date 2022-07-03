@@ -18,6 +18,13 @@
     object-fit: cover;
 }
 
+.header__image-user {
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0rem;
+}
+
 .menu-icon:active {
     transition: 0.4s;
     background-color: gray;

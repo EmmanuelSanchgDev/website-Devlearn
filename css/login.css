@@ -70,6 +70,12 @@
 
 .form__container-checkbox{
     padding-left: 1rem;
+    text-align: right;
+}
+
+.form__container-checkbox a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .form__label-checkbox {

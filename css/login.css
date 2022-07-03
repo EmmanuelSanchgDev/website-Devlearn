@@ -1,6 +1,7 @@
-
 /* estilos movile */
 .main {
+    width: 100%;
+    padding: 2rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -9,21 +10,25 @@
 }
 
 .form-container {
-    width: 80%;
-    height: 25rem;
+    width: clamp(32rem, 80%, 40rem);
+    height: clamp(30rem, 50%,45rem);
+    height: 30rem;
+    min-height: 30rem;
+    max-height: 45rem;
     border: 0.1rem solid #000;
     border-radius: var(--radius);
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form__container {
-    height: 80%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
 .form__title {
@@ -37,7 +42,7 @@
 }
 
 .form__placeholder {
-    font-size: 1.8rem;
+    font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 1rem;
@@ -46,30 +51,49 @@
 }
 
 .form__input {
-    height: 3rem;
+    height: 4rem;
     padding-left: 1rem;
     outline: none;
+    font-size: 1.8rem;
 }
 .form__input::placeholder {
     opacity: 0;
 }
 
 .form__input:focus + .form__placeholder {
-    transform: translate(-0.5rem, -2.5rem);
+    transform: translate(-0.5rem, -3rem);
 }
 
 .form__input:not(:placeholder-shown) + .form__placeholder {
-    transform: translate(-0.5rem, -2.5rem);
+    transform: translate(-0.5rem, -3rem);
+}
+
+.form__container-remember {
+    padding-left: 1rem;
+}
+
+.form__remember {
+    text-decoration: none;
 }
 
 .form__submit {
-    height: 3rem;
+    height: 4rem;
     font-size: 1.8rem;
+    border-width: 0.1rem;
+    border-radius: var(--radius);
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+.form__submit:active {
+    background-color: #fff;
+    color: #000;
 }
 
-/*  */
 .image-container {
     width: 95%;
+    max-width: 50rem;
 }
 
 .image {
@@ -81,3 +105,14 @@
 
 
 /* desktop */
+@media screen and (min-width: 800px) {
+    .main {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+    
+}
